@@ -6,6 +6,7 @@
 
 :root {
     --colorFondoPagina: rgb(41, 41, 41);
+    --colorFondoHeader: rgb(30, 30, 30);
     --colorHoverBotones: rgba(56, 184, 223, 0.9);
 }
 
@@ -16,14 +17,14 @@ body {
 /* NAVEGADOR HEADER*/
 
 .contenedor-navegador {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--colorFondoHeader);
     position: fixed;
     top: 0;
     width: 100%;
 }
 
 .navegador {
-    height: 60px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,7 +112,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: aliceblue;
+    color: white;
     width: 40px;
     height: 40px;
     padding: 5px 5px;
@@ -139,9 +140,9 @@ body {
 /* BOTONES INFERIOR */
 
 .contenedor-botones-inferior {
-    background-color: var(--colorFondoPagina);
+    background-color: var(--colorFondoHeader);
     position: fixed;
-    height: 60px;
+    height: 55px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -152,7 +153,7 @@ body {
 
 .contenedor-botones-inferior .botones-inferior {
     margin: 0px 10px;
-    width: 85%;
+    width: 90%;
     max-width: 550px;
     display: flex;
     align-items: center;
@@ -166,15 +167,15 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: aliceblue;
+    color: white;
     font-family: 'Open sans', sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     padding: 5px;
 
 }
 
 .contenedor-botones-inferior .botones-inferior a i {
-    font-size: 22px;
+    font-size: 19px;
 }
 
 /* CONTENIDO PAGINA*/
