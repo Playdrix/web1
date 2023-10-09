@@ -49,6 +49,11 @@ body {
 
 /* Buscador*/
 
+.opciones.celular button {
+    background: none;
+    border: none;
+}
+
 
 .navegador .contenedor-buscador {
     display: flex;
@@ -58,7 +63,7 @@ body {
 }
 
 .navegador .contenedor-buscador.web {
-    display: none;
+    display: flex;
 }
 
 .navegador .contenedor-buscador input {
@@ -77,7 +82,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     margin-left: 3px;
 }
 
@@ -90,8 +94,7 @@ body {
 }
 
 .navegador .contenedor-buscador button i:hover{
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 100px;
+
     color: var(--colorHoverBotones);
 }
 
@@ -142,7 +145,7 @@ body {
 .contenedor-botones-inferior {
     background-color: var(--colorFondoHeader);
     position: fixed;
-    height: 55px;
+    height: 60px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -176,6 +179,7 @@ body {
 
 .contenedor-botones-inferior .botones-inferior a i {
     font-size: 19px;
+    padding-bottom: 3px;
 }
 
 /* CONTENIDO PAGINA*/
