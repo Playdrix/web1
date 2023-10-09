@@ -145,7 +145,7 @@ body {
 .contenedor-botones-inferior {
     background-color: var(--colorFondoHeader);
     position: fixed;
-    height: 60px;
+    height: 55px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -163,22 +163,31 @@ body {
     justify-content: space-between;
 }
 
-.contenedor-botones-inferior .botones-inferior a {
+.contenedor-botones-inferior .botones-inferior button {
     display: flex;
+    background: none;
+    border: none;
     min-width: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
     font-family: 'Open sans', sans-serif;
     font-size: 10px;
     padding: 5px;
 
+    transition: all 0.15s ease;
+
 }
 
-.contenedor-botones-inferior .botones-inferior a i {
-    font-size: 19px;
+.contenedor-botones-inferior .botones-inferior button:hover {
+    color: white;
+    transform: scale(1.09);
+} 
+
+.contenedor-botones-inferior .botones-inferior button i {
+    font-size: 18px;
     padding-bottom: 3px;
 }
 
