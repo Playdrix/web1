@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+div {
+    display: block;
+}
+
+header {
+    background-color: chartreuse;
+    height: 100px;
+}
+
+main {
+    background-color: aqua;
+    height: 2000px;
+}
+
+footer {
+    background-color: chocolate;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
