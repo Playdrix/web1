@@ -23,7 +23,7 @@ body {
 }
 
 .navegador {
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +36,7 @@ body {
 .navegador .contenedor-logo a {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
     color: aliceblue;
 }
@@ -112,9 +112,10 @@ body {
     justify-content: center;
     text-decoration: none;
     color: aliceblue;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     padding: 5px 5px;
+    margin: 0px 5px;
 }
 
 .navegador .contenedor-opciones .opciones a:hover {
@@ -124,7 +125,7 @@ body {
 }
 
 .navegador .contenedor-opciones .opciones a i{
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     align-items: center;
 }
@@ -140,7 +141,7 @@ body {
 .contenedor-botones-inferior {
     background-color: var(--colorFondoPagina);
     position: fixed;
-    height: 45px;
+    height: 60px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -151,7 +152,7 @@ body {
 
 .contenedor-botones-inferior .botones-inferior {
     margin: 0px 10px;
-    width: 100%;
+    width: 85%;
     max-width: 550px;
     display: flex;
     align-items: center;
@@ -167,13 +168,13 @@ body {
     text-decoration: none;
     color: aliceblue;
     font-family: 'Open sans', sans-serif;
-    font-size: 9px;
+    font-size: 11px;
     padding: 5px;
 
 }
 
 .contenedor-botones-inferior .botones-inferior a i {
-    font-size: 17px;
+    font-size: 22px;
 }
 
 /* CONTENIDO PAGINA*/
@@ -208,7 +209,7 @@ body {
 }*/
 
 
-.fixed-contenedor-navegador {
+.contenedor-navegador {
     position: fixed;
     top: 0;
     left: 0;
