@@ -256,6 +256,23 @@ body {
 
 @media screen and (max-width: 768px) {
 
+    .navegador .contenedor-buscador {
+        justify-content: center;
+        width: 50%;
+    }
+
+
+    /* CONTENIDO PAGINA */
+
+    .contenedor-pagina .pagina .contenedor-recuadro {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
 
     /* Botones inferior*/
 
@@ -263,7 +280,7 @@ body {
     .contenedor-botones-inferior {
         position: fixed;
         background-color: var(--colorFondoHeader);
-        height: 55px;
+        height: 50px;
         left: 0;
         bottom: 0;
         right: 0;
@@ -274,7 +291,7 @@ body {
 
     .contenedor-botones-inferior .botones-inferior {
         margin: 0px 10px;
-        width: 90%;
+        width: 96%;
         max-width: 550px;
         display: flex;
         align-items: center;
@@ -296,7 +313,7 @@ body {
         font-size: 10px;
         padding: 5px;
         margin-top: 3px;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         cursor: default;
     
         transition: all 0.15s ease;
@@ -313,6 +330,7 @@ body {
     .contenedor-botones-inferior .botones-inferior button i {
         font-size: 18px;
         padding: 0px;
+        margin-bottom: 1px;
     }
 
     .contenedor-botones-inferior .botones-inferior .mas {
@@ -338,20 +356,6 @@ body {
     .navegador .contenedor-opciones .opciones.celular {
         display: flex;
     }
-
-
-    /* CONTENIDO PAGINA */
-
-    .contenedor-pagina .pagina .contenedor-recuadro {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-
-}
-
-@media screen and (max-width: 576px) {
-
 
     /* CONTENIDO PAGINA */
 
