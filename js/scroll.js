@@ -1,5 +1,5 @@
 const header = document.querySelector("header");
-const mainContent = document.querySelector("main");
+const mainContent = document.querySelector("contenedor-pagina");
 
 let lastScrollY = window.scrollY;
 let setScroll = 0;
