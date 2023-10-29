@@ -30,30 +30,50 @@
 
             <div class="contenedor-opciones">
                 <div class="opciones web">
-                    <button>
-                        <i class="fa-solid fa-house"></i>
-                    </button>
-                    <button>
-                        <i class="fa-solid fa-code"></i>
-                    </button>
-                    <button>
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                </div>
-
-                <div class="opciones celular">
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button>
-                        <i class="fa-solid fa-house"></i>
-                    </button>
-                    <button>
-                        <i class="fa-solid fa-code"></i>
-                    </button>
-                    <button>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
+                    <div class="contenedor-buscador2 web">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="contenedor-butnav contenedor-opciones-house">
+                        <button>
+                            <i class="fa-solid fa-house"></i>
+                        </button>
+                        <nav class="contenedor-nav opciones-house">
+                            <ul>
+                                <li>
+                                    <a href="#">Inicio</a>
+                                    <a href="#">Cambios</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contenedor-butnav contenedor-opciones-code">
+                        <button>
+                            <i class="fa-solid fa-code"></i>
+                        </button>
+                        <nav class="contenedor-nav opciones-code">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/aplicationqv/dixplayqv/blob/main/index.html" target="_blank">Código HTML</a>
+                                    <a href="https://github.com/aplicationqv/dixplayqv/blob/main/css/styles.css" target="_blank">Código CSS</a>
+                                    <a href="https://github.com/aplicationqv/dixplayqv/blob/main/js/scroll.js" target="_blank">Código Javascript</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contenedor-butnav contenedor-opciones-user">
+                        <button>
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <nav class="contenedor-nav opciones-user">
+                            <ul>
+                                <li>
+                                    <a href="#">Perfil</a>
+                                    <a href="#">Configuración</a>
+                                    <a href="#">Cerrar sesión</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,13 +83,13 @@
 
         <nav class="contenedor-botones-inferior">
             <div class="botones-inferior">
-                <button>
+                <button class="button-aplicaciones active" id="button-aplicaciones">
                     <i class="fa-solid fa-house-laptop"></i>Aplicaciones
                 </button>
-                <button>
+                <button class="button-web" id="button-web">
                     <i class="fa-solid fa-globe"></i>Páginas web
                 </button>
-                <button>
+                <button class="button-comentarios" id="button-comentarios">
                     <i class="fa-solid fa-comment-dots"></i>Comentarios
                 </button>
                 <button class="mas">
@@ -79,37 +99,96 @@
         </nav>
         
         <section class="pagina">
-            <h1>Páginas web</h1>
+            <section class="section-aplicaciones active" id="section-aplicaciones">
+                <h1>Aplicaciones</h1>
+                <br>
+                <div class="contenedor-recuadro contenedor-aplicaciones">
+                    <div class="contenedor-aplicacion1">
+                        Calculadora de calorías
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Sistema de cine
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Simulador de microondas
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Simulador de lavadora
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                    <div class="contenedor-aplicacion2">
+                        Libre
+                    </div>
+                </div>
+            </section>
+            <section class="section-web" id="section-web">
+                <h1>Páginas web</h1>
+                <br>
+                <div class="contenedor-recuadro contenedor-web">
+                    <div class="contenedor-web1">
+                        Página web Vicente
+                    </div>
+                    <div class="contenedor-web2">
+                        Página web Estela
+                    </div>
+                    <div class="contenedor-web3">
+                        Página web Machi
+                    </div>
+                </div>
+            </section>
+            <section class="section-comentarios" id="section-comentarios">
+                <h1>Comentarios</h1>
+                <br>
+                <div class="contenedor-recuadro contenedor-comentarios">
+                    <div class="contenedor-comentario1">
+                        Comentarios / opiniones
+                    </div>
+                    <div class="contenedor-comentario1">
+                        Foro
+                    </div>
+                </div>
+            </section>
+
             <br>
-            <div class="contenedor-recuadro contenedor-aplicaciones">
-                <div class="contenedor-aplicacion1">
-                    Calculadora de calorías
-                </div>
-                <div class="contenedor-aplicacion2">
-                    Sistema de cine
-                </div>
-            </div>
-            <div class="contenedor-recuadro contenedor-web">
-                <div class="contenedor-web1">
-                    WEB-A
-                </div>
-                <div class="contenedor-web2">
-                    WEB-B
-                </div>
-                <div class="contenedor-web3">
-                    WEB-C
-                </div>
-            </div>
-            <div class="contenedor-recuadro contenedor-comentarios">
-                <div class="contenedor-comentario1">
-                    COMENTARIO-A
-                </div>
-            </div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam laudantium dolorum libero fugit, nesciunt odit expedita repellat soluta veniam accusantium hic reiciendis? Repellendus culpa iure placeat eius qui. Quae quod sint sit eligendi tempora accusamus commodi, corrupti exercitationem laudantium molestiae dicta possimus fugiat adipisci dignissimos iusto rem ratione numquam? Corrupti eaque autem atque sint nobis praesentium vero officiis illum earum animi libero perferendis labore deleniti dolor rem, nisi nesciunt quia vel excepturi amet? Eligendi sequi hic consectetur. Ratione harum dignissimos inventore odio quisquam maiores? Facilis culpa reiciendis eveniet exercitationem, soluta quae. Saepe doloribus dolorem fugiat non delectus minima dolore optio explicabo reprehenderit nulla, laudantium voluptates commodi nostrum unde, alias eligendi. Quasi tenetur numquam modi temporibus exercitationem harum cupiditate consequuntur libero fugiat qui! Incidunt beatae delectus sint quo laboriosam, expedita facilis, amet fugit reiciendis nulla eius accusantium iure! Architecto mollitia dicta ab harum recusandae hic doloremque voluptas excepturi maiores tempore, minima laboriosam obcaecati delectus quisquam neque voluptate deleniti quae provident doloribus tempora molestiae. Corporis, non voluptas magni earum repellat eius quo quos dignissimos. Temporibus rerum reiciendis quasi minus ut. Recusandae dolorem debitis, quis ipsa reprehenderit tempore corrupti laudantium eligendi expedita, officiis molestiae sunt. Nesciunt nulla ut perferendis modi quam dolor ad natus delectus distinctio, porro vero perspiciatis quae similique corrupti quod, ipsum quos quidem expedita blanditiis veniam velit laborum maiores! Obcaecati cu
+            <br>
+            <!-- Aplicaciones-->
+            Texto de prueba:
+
+            <br>
+            <br>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam ab ex placeat impedit voluptatem unde sint quis totam, explicabo eveniet earum! Odit, ad? Nobis aliquam quisquam sunt repellat culpa facere nam soluta distinctio eos maiores, deserunt eaque earum qui veritatis hic perferendis reprehenderit exercitationem omnis expedita ab ipsa? Cum atque amet repellat itaque enim. Expedita facilis repudiandae modi illum rem mollitia atque corrupti fugiat dolor ea recusandae fuga veritatis ullam nobis est, non ex accusantium. Iure unde cupiditate cumque consectetur! Culpa, minus voluptates. Molestiae magni eius nostrum expedita consequatur sequi ducimus alias quis repudiandae rerum? Possimus, illo. Delectus, molestias! Nulla expedita, reprehenderit sed totam aliquid a blanditiis molestias consectetur aut eius aliquam voluptas voluptatibus, illo velit explicabo, qui sequi? Quidem quaerat impedit rerum illum. Autem velit sint facere vero nemo repudiandae possimus quae sequi harum ullam sed libero fuga labore illum necessitatibus, eum enim, dolorum natus quaerat eaque molestias, est ex. Necessitatibus illum laboriosam, quisquam in quis obcaecati consectetur voluptatibus, voluptatum delectus id eaque quas quae, optio minima! Cum eveniet optio odio inventore, explicabo consequuntur, doloribus quod possimus deserunt, repellat placeat enim vero quia laudantium fugiat cumque esse animi illum officiis impedit perferendis est. Repudiandae libero quibusdam omnis sunt ipsam ut eveniet laudantium. Ipsum, tenetur! Molestiae facere beatae minima ab architecto iure, inventore fugit. Explicabo aut voluptas alias inventore, mollitia doloribus, ullam provident qui commodi eum deleniti tempora soluta earum dolores reprehenderit at enim nulla! Deserunt distinctio sapiente rem corrupti numquam, amet molestias harum, tenetur aspernatur porro sint consequuntur ducimus sed voluptatem possimus necessitatibus illum? Suscipit necessitatibus numquam quidem hic repellendus, mollitia dicta dignissimos perspiciatis sed fuga atque saepe! Labore dolore veniam hic possimus unde itaque commodi, aut ea mollitia obcaecati porro incidunt quas vero saepe neque eaque adipisci voluptas nobis illum voluptate autem ratione quidem! Similique aut reprehenderit obcaecati ratione magnam amet libero consectetur nam, tempora deleniti sit architecto molestias facilis illum sequi saepe iusto aspernatur. Consectetur quia, ducimus consequatur blanditiis id ipsam nulla esse nisi? Neque nesciunt animi ipsam quo! Tempore eaque quae, quibusdam possimus accusamus voluptatum aspernatur quod at est sed vero sequi veniam consequuntur iure debitis qui ut molestiae. Autem iusto doloremque, nesciunt perspiciatis reprehenderit nemo distinctio accusantium sapiente, facere expedita mollitia in harum excepturi. Ullam quisquam porro facere ea blanditiis quos necessitatibus suscipit perspiciatis, molestiae at voluptatem? Fugit assumenda explicabo perferendis enim aliquam! Deleniti, molestias provident deserunt ipsa minus iste modi ut sed animi, itaque sint necessitatibus cumque neque debitis, laborum ullam ducimus. Ab cum natus quod dolores animi excepturi fuga mollitia optio ad labore placeat id dicta quaerat modi inventore ipsum, consectetur deserunt odit et illum voluptates. Consequuntur aut sint nam nobis veniam fugiat animi enim deleniti voluptates quas. Quaerat similique ullam eaque quisquam nulla incidunt libero, aspernatur exercitationem quod aliquid autem molestiae alias illum officiis, hic nemo quibusdam a officia minus eum repellendus! Provident beatae, eum, esse culpa quam, laudantium eos iure consequuntur rerum autem molestias quis? Voluptas omnis laudantium harum nostrum, repellat eius labore dicta libero similique sapiente corporis dolores eveniet.
         </section>
 
     </main>
 
     <script src="./js/scroll.js"></script>
+    <script src="./js/pagina.js"></script>
 </body>
 </html>

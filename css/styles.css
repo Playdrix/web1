@@ -6,7 +6,7 @@
 
 :root {
     --colorFondoPagina: rgb(41, 41, 41);
-    --colorAzulHover: rgb(20, 57, 177);
+    --colorAzulHover: rgb(19, 70, 209);
     --colorFondoPaginaUsar: rgb(22, 26, 41);
     --colorFondoHeader: rgb(8, 9, 20); 
     --colorHoverBotones: rgba(56, 184, 223, 0.9);
@@ -60,6 +60,10 @@ body {
     align-items: center;
     justify-content: start;
     width: 50%;
+}
+
+.navegador .contenedor-buscador2 {
+    display: none;
 }
 
 .navegador .contenedor-buscador input {
@@ -138,6 +142,53 @@ body {
     align-items: center;
 }
 
+/* Opciones ul house*/
+
+.navegador .contenedor-opciones .contenedor-butnav {
+    position: relative;
+}
+
+.navegador .contenedor-opciones .contenedor-nav {
+    display: none;
+    position: absolute;
+    background-color: rgb(33, 33, 37);
+    border-radius: 7px;
+    right: 0;
+    width: 175px;
+}
+
+.navegador .contenedor-opciones .contenedor-nav li {
+    list-style: none;
+    padding: 6px 0px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navegador .contenedor-opciones .contenedor-nav li a {
+    padding: 10px 13px 8px 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.navegador .contenedor-opciones .contenedor-nav li a:hover {
+    background-color: var(--colorAzulHover);
+}
+
+/* Hover para nav de las opciones */
+
+.navegador .contenedor-opciones .contenedor-opciones-house:hover .opciones-house {
+    display: initial;
+}
+
+.navegador .contenedor-opciones .contenedor-opciones-code:hover .opciones-code {
+    display: initial;
+}
+
+.navegador .contenedor-opciones .contenedor-opciones-user:hover .opciones-user {
+    display: initial;
+}
+
 /* Opciones celular*/
 
 .navegador .contenedor-opciones .opciones.celular {
@@ -158,15 +209,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    margin-top: 2px;
     gap: 10px;
 }
 
 .contenedor-botones-inferior .botones-inferior button {
     display: flex;
-    width: 135px;
-    height: 33px;
-    background: rgb(18, 18, 22);
+    width: 131px;
+    height: 31px;
+    background-color: rgb(18, 18, 22);
     border: none;
     border-radius: 100px;
     min-width: 50px;
@@ -184,9 +236,14 @@ body {
 
 }
 
+.contenedor-botones-inferior .botones-inferior button.active {
+    color: white;
+    background-color: var(--colorAzulHover)
+} 
+
 .contenedor-botones-inferior .botones-inferior button:hover {
     color: white;
-    background-color: rgb(24, 70, 197);
+    background-color: var(--colorAzulHover)
 } 
 
 .contenedor-botones-inferior .botones-inferior button i {
@@ -212,14 +269,42 @@ body {
 
 .contenedor-pagina h1 {
     color: white;
+    font-size: 22px;
     padding: 0px 6px;
+}
+
+/* Páginas */
+
+.contenedor-pagina .pagina .section-aplicaciones {
+    display: none;
+}
+
+.contenedor-pagina .pagina .section-aplicaciones.active {
+    display: initial;
+}
+
+.contenedor-pagina .pagina .section-web {
+    display: none;
+}
+
+.contenedor-pagina .pagina .section-web.active {
+    display: initial;
+}
+
+.contenedor-pagina .pagina .section-comentarios {
+    display: none;
+}
+
+.contenedor-pagina .pagina .section-comentarios.active {
+    display: initial;
 }
 
 .contenedor-pagina .pagina .contenedor-recuadro {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     padding-bottom: 15px;
-    gap: 14px;
+    gap: 20px;
+    cursor: pointer;
 }
 
 
@@ -293,7 +378,7 @@ body {
     .contenedor-botones-inferior {
         position: fixed;
         background-color: var(--colorFondoHeader);
-        height: 50px;
+        height: 52px;
         left: 0;
         bottom: 0;
         right: 0;
@@ -333,6 +418,11 @@ body {
     
     }
 
+    .contenedor-botones-inferior .botones-inferior button.active {
+        color: white;
+        background: none;
+    } 
+
     .contenedor-botones-inferior .botones-inferior button:hover {
         color: white;
         border: none;
@@ -357,16 +447,8 @@ body {
     
     /* Opciones superior */ 
 
-    .navegador .contenedor-opciones .opciones {
-        display: none;
-    }
-
-    .navegador .contenedor-opciones .opciones.celular {
-        display: none;
-    }
-
-    .navegador .contenedor-opciones .opciones.celular {
-        display: flex;
+    .navegador .contenedor-buscador2 {
+        display: initial;
     }
 
     /* CONTENIDO PAGINA */
