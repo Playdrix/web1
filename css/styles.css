@@ -6,9 +6,11 @@
 
 :root {
     --colorFondoPagina: rgb(41, 41, 41);
-    --colorFondoHeader: rgb(30, 30, 30);
+    --colorAzulHover: rgb(20, 57, 177);
+    --colorFondoPaginaUsar: rgb(22, 26, 41);
+    --colorFondoHeader: rgb(8, 9, 20); 
     --colorHoverBotones: rgba(56, 184, 223, 0.9);
-    --colorBotonesGeneral: rgba(255, 255, 255, 0.85);
+    --colorBotonesGeneral: rgba(255, 255, 255, 0.82);
     --colorHoverBotonPagina: rgb(31, 31, 31);
 }
 
@@ -47,6 +49,7 @@ body {
 .navegador .contenedor-logo img {
     width: 22px;
     margin-right: 7px;
+    margin-left: 3px;
 }
 
 /* Buscador*/
@@ -60,12 +63,14 @@ body {
 }
 
 .navegador .contenedor-buscador input {
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(37, 37, 48);
+    color: rgba(255, 255, 255, 0.9);
     width: 60%;
-    padding: 8px 13px;
-    border-radius: 15px;
+    padding: 9px 18px;
+    border-radius: 100px;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    outline: none;
     border: none;
 }
 
@@ -76,11 +81,12 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-left: 4px;
 }
 
 .navegador .contenedor-buscador button i{
     padding: 10px 10px;
-    font-size: 17px;
+    font-size: 18px;
     color: var(--colorBotonesGeneral);
 
     transition: color 0.15s ease;
@@ -88,6 +94,8 @@ body {
 
 .navegador .contenedor-buscador button i:hover{
     color: white;
+    background: rgb(22, 26, 41);
+    border-radius: 50px;
 }
 
 /* Opciones derecha*/
@@ -115,13 +123,13 @@ body {
 
     width: 40px;
     height: 40px;
-    padding: 2px 0px;
     margin: 0px 2px;
 }
 
 .navegador .contenedor-opciones .opciones button:hover {
     color: white;
-    transform: scale(1.07);
+    background: rgb(22, 26, 41);
+    border-radius: 50px;
 }
 
 .navegador .contenedor-opciones .opciones button i{
@@ -150,7 +158,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     gap: 10px;
 }
 
@@ -158,9 +166,9 @@ body {
     display: flex;
     width: 135px;
     height: 33px;
-    background-color: rgb(46, 46, 46);
+    background: rgb(18, 18, 22);
     border: none;
-    border-radius: 7px;
+    border-radius: 100px;
     min-width: 50px;
     align-items: center;
     justify-content: center;
@@ -178,7 +186,7 @@ body {
 
 .contenedor-botones-inferior .botones-inferior button:hover {
     color: white;
-    background-color: var(--colorHoverBotonPagina);
+    background-color: rgb(24, 70, 197);
 } 
 
 .contenedor-botones-inferior .botones-inferior button i {
@@ -194,12 +202,17 @@ body {
 /* CONTENIDO PAGINA*/
 
 .contenedor-pagina {
-    background-color: rgb(54, 54, 54);
+    background-color: var(--colorFondoPaginaUsar);
     padding: 70px 15px 70px 15px;
     min-height: 100vh;
     color: white;
     font-family: 'Open sans', sans-serif;
     font-weight: 600;
+}
+
+.contenedor-pagina h1 {
+    color: white;
+    padding: 0px 6px;
 }
 
 .contenedor-pagina .pagina .contenedor-recuadro {
@@ -322,7 +335,6 @@ body {
 
     .contenedor-botones-inferior .botones-inferior button:hover {
         color: white;
-        transform: scale(1.07);
         border: none;
         background: none;
     } 
