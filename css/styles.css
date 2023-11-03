@@ -12,10 +12,12 @@
     --colorHoverBotones: rgba(56, 184, 223, 0.9);
     --colorBotonesGeneral: rgba(255, 255, 255, 0.82);
     --colorHoverBotonPagina: rgb(31, 31, 31);
+    --colorBotonInactivo: rgb(47, 46, 66);
+    --buencolorHover: rgb(35, 40, 56);
 }
 
 body {
-    background-color: var(--colorFondoPagina);
+    background-color: var(--colorFondoPaginaUsar);
 }
 
 /* NAVEGADOR HEADER*/
@@ -151,7 +153,7 @@ body {
 .navegador .contenedor-opciones .contenedor-nav {
     display: none;
     position: absolute;
-    background-color: rgb(33, 33, 37);
+    background-color: var(--colorBotonInactivo);
     border-radius: 7px;
     right: 0;
     width: 175px;
@@ -211,16 +213,15 @@ body {
     justify-content: start;
     margin-bottom: 15px;
     margin-top: 2px;
-    gap: 10px;
+    gap: 18px;
 }
 
 .contenedor-botones-inferior .botones-inferior button {
     display: flex;
     width: 131px;
-    height: 31px;
-    background-color: rgb(18, 18, 22);
+    background-color: rgb(47, 46, 66);
     border: none;
-    border-radius: 100px;
+    border-radius: 5px;
     min-width: 50px;
     align-items: center;
     justify-content: center;
@@ -229,10 +230,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    padding-right: 5px;
+    padding: 5px 5px 5px 2px;
     cursor: pointer;
-
-    transition: all 0.3s ease;
 
 }
 
@@ -259,7 +258,6 @@ body {
 /* CONTENIDO PAGINA*/
 
 .contenedor-pagina {
-    background-color: var(--colorFondoPaginaUsar);
     padding: 70px 15px 70px 15px;
     min-height: 100vh;
     color: white;
@@ -269,11 +267,15 @@ body {
 
 .contenedor-pagina h1 {
     color: white;
-    font-size: 22px;
-    padding: 0px 6px;
+    font-size: 23px;
+    padding: 10px 6px 0px 6px;
 }
 
 /* Páginas */
+
+.contenedor-pagina.active {
+    display: none;
+}
 
 .contenedor-pagina .pagina .section-aplicaciones {
     display: none;
@@ -301,21 +303,63 @@ body {
 
 .contenedor-pagina .pagina .contenedor-recuadro {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     padding-bottom: 15px;
     gap: 20px;
+}
+
+/* CONTENEDOR DE APLICACIONES */
+
+.contenedor-pagina .pagina .contenedor-recuadro .contenedor-aplicacion{
+    display: grid;
     cursor: pointer;
+    padding: 6px;
+    background-color: rgb(35, 40, 56);
+    border-radius: 8px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+
+    grid-template-areas: 'imagen'
+                         'titulo-descripcion';
+}
+
+.contenedor-pagina .pagina .contenedor-recuadro .contenedor-aplicacion:hover {
+    background-color: rgb(49, 54, 70);
+}
+
+.contenedor-imagen-app {
+    grid-area: imagen;
+
+    border-radius: 8px;
+    background-image: url(../img/calculadora-foto.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor-info-app .contenedor-titulo-app {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 10px 4px 5px;
+    
+}
+.contenedor-info-app .contenedor-descripcion-app {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px 4px 5px;
 }
 
 
 
-.contenedor-pagina .pagina .contenedor-recuadro div{
-    background-color: rgb(41, 41, 41);
-    height: 230px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
+/* CONTENEDOR FOOTER */
+
+.contenedor-footer {
+    background-color: var(--colorFondoHeader);
+    height: 40px;
+    bottom: 0;
 }
 
 
@@ -334,11 +378,11 @@ body {
 @media screen and (max-width: 1600px) {
 
     .contenedor-pagina .pagina .contenedor-recuadro {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
 
     .contenedor-pagina .pagina .contenedor-recuadro {
         grid-template-columns: repeat(4, 1fr);

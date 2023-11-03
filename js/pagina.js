@@ -36,3 +36,13 @@ botonComentarios.addEventListener('click', () => {
     botonComentarios.classList.add('active')
 })
 
+
+
+
+const cal_calorias = document.getElementById('calculadora-calorias');
+const paginaPrincipal = document.getElementById('contenedor-pagina')
+
+cal_calorias.addEventListener('click', () => {
+    paginaPrincipal.classList.add('active')
+});
+
